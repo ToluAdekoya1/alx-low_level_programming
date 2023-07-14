@@ -5,9 +5,8 @@
 /**
  * main - Entry point of the program
  *
- * Result: 0 upon successful completion
+ * Return: 0 upon successful completion
  */
-
 int main(void)
 {
 	int n;
