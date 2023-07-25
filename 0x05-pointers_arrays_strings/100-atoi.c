@@ -18,11 +18,15 @@ int _atoi(char *s)
 	{
 		i++;
 	}
-	while (s[i] == '-' || s[i] == '+')
+	while (s[i])
 	{
 		if (s[i] == '-')
 		{
 			sign = -sign;
+		}
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			break;
 		}
 		i++;
 	}
