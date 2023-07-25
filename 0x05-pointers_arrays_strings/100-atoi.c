@@ -14,6 +14,10 @@ int _atoi(char *s)
 	int result = 0;
 	int i = 0;
 
+	while (s[i] == ' ')
+	{
+		i++;
+	}
 	while (s[i])
 	{
 		if (s[i] == '-')
