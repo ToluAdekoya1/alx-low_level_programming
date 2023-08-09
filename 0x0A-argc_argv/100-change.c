@@ -36,7 +36,10 @@ int main(int argc, char *argv[])
 	cents = cents % 5;
 
 	coinsUsed += cents;
-
+	if (cents % 2 != 0)
+	{
+		coinsUsed--;
+	}
 	printf("%d\n", coinsUsed);
 
 	return (0);
